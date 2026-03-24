@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SRE Challenge | Tiarnan Byrne</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0d1117;
+            color: #e6edf3;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                Roboto, Oxygen, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 680px;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            color: #58a6ff;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 0.35rem 0.85rem;
+            border-radius: 2rem;
+            margin-bottom: 1.75rem;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: #e6edf3;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .role {
+            font-size: 1rem;
+            color: #58a6ff;
+            font-weight: 500;
+            margin-bottom: 2rem;
+        }
+
+        .divider {
+            width: 40px;
+            height: 2px;
+            background-color: #30363d;
+            margin: 0 auto 2rem auto;
+        }
+
+        .description {
+            font-size: 1rem;
+            color: #8b949e;
+            line-height: 1.75;
+            margin-bottom: 2.5rem;
+        }
+
+        .stack {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.65rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .tag {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            color: #8b949e;
+            font-size: 0.8rem;
+            padding: 0.3rem 0.75rem;
+            border-radius: 0.375rem;
+        }
+
+        .footer {
+            font-size: 0.8rem;
+            color: #30363d;
+            color: #484f58;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="badge">SRE Technical Challenge</div>
+
+        <h1>Tiarnan Byrne</h1>
+        <p class="role">Site Reliability Engineer</p>
+
+        <div class="divider"></div>
+
+        <p class="description">
+            A cloud infrastructure project provisioned entirely through Terraform
+            and deployed to Azure via GitHub Actions. Built to demonstrate
+            infrastructure as code, security by default, and automated delivery
+            pipelines.
+        </p>
+
+        <div class="stack">
+            <span class="tag">Azure Static Web Apps</span>
+            <span class="tag">Terraform</span>
+            <span class="tag">GitHub Actions</span>
+            <span class="tag">Log Analytics</span>
+        </div>
+
+        <p class="footer">
+            Provisioned with Terraform · Deployed via GitHub Actions
+        </p>
+    </div>
+</body>
+
+</html>
