@@ -6,7 +6,7 @@
 
 output "app_url" {
   description = "Live URL of the deployed web application"
-  value       = "https://${azurerm_container_app.main.latest_revision_fqdn}"
+  value       = "https://${azurerm_static_web_app.main.default_host_name}"
 }
 
 output "resource_group" {
@@ -17,14 +17,4 @@ output "resource_group" {
 output "log_analytics_workspace" {
   description = "Log Analytics workspace for container observability"
   value       = azurerm_log_analytics_workspace.main.name
-}
-
-output "container_app_environment" {
-  description = "Container Apps environment hosting the workload"
-  value       = azurerm_container_app_environment.main.name
-}
-
-output "container_image" {
-  description = "Container image currently deployed"
-  value       = "nginx:alpine"
 }
