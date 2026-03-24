@@ -9,11 +9,11 @@ variable "project_name" {
   type        = string
   default     = "sre-challenge"
 }
-
+# Regions available for static web app 'westus2,centralus,eastus2,westeurope,eastasia'
 variable "location" {
   description = "Azure region for deployment"
   type        = string
-  default     = "UK South"
+  default     = "West Europe"
 }
 
 variable "owner" {
@@ -32,16 +32,4 @@ variable "log_retention_days" {
   description = "Number of days to retain logs in Log Analytics"
   type        = number
   default     = 30
-}
-
-variable "container_cpu" {
-  description = "CPU allocation for the container app"
-  type        = number
-  default     = 0.25
-}
-
-variable "container_memory" {
-  description = "Memory allocation for the container app"
-  type        = string
-  default     = "0.5Gi"
 }
